@@ -1,4 +1,4 @@
 package com.githubapiclient.entity;
 
-public class Commit {
+public record Commit(String ssh) {
 }
