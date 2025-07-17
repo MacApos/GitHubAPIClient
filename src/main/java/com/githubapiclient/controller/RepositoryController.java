@@ -1,5 +1,6 @@
 package com.githubapiclient.controller;
 
+import com.githubapiclient.service.GithubRepoFetchService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,8 +12,10 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class RepositoryController {
 
+    private final GithubRepoFetchService githubRepoFetchService;
+
     @RequestMapping("/")
     public Map<String, List<String>> repository() {
-        return Map.of("repositories", List.of("repo1","repo2"));
+        return githubRepoFetchService.fetchReposByUsername("MacApos");
     }
 }
