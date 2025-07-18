@@ -15,13 +15,20 @@ public class GithubRepositoryFetchService {
     private final RestClient restClient;
     private final String BASE_URL = "https://api.github.com";
 
-    private List<GithubRepository> fetchRepositoriesByUsername(String username) {
-        ParameterizedTypeReference<List<GithubRepository>> repositoryListTypeReference = new ParameterizedTypeReference<>() {
-        };
-        List<GithubRepository> githubRepositories = restClient.get()
-                .uri(BASE_URL + "/users/{username}/repos", username)
+    private <T> T responseFactory(ParameterizedTypeReference<T> parameterizedTypeReference, String uri) {
+        return restClient.get()
+                .uri(uri)
                 .retrieve()
-                .body(repositoryListTypeReference);
+                .body(parameterizedTypeReference);
+    }
+
+    private List<GithubRepository> fetchRepositoriesByUsername(String username) {
+        ParameterizedTypeReference<List<GithubRepository>> repositoryListTypeReference =
+                new ParameterizedTypeReference<>() {
+                };
+//        List<GithubRepository> githubRepositories = restClientFactory(repositoryListTypeReference,BASE_URL + "/users/{username}/repos", username);
+        List<GithubRepository> githubRepositories = responseFactory(repositoryListTypeReference,
+                "http://localhost:8081/" + username);
         return githubRepositories == null ? List.of() :
                 githubRepositories.stream().filter(repo -> !repo.isFork()).toList();
     }
@@ -29,10 +36,7 @@ public class GithubRepositoryFetchService {
     private List<Branch> fetchBranchesByUrl(String url) {
         ParameterizedTypeReference<List<Branch>> branchListTypeReference = new ParameterizedTypeReference<>() {
         };
-        return restClient.get()
-                .uri(url.replace("{/branch}", ""))
-                .retrieve()
-                .body(branchListTypeReference);
+        return responseFactory(branchListTypeReference, url.replace("{/branch}", ""));
     }
 
     public List<GithubRepository> facade(String username) {

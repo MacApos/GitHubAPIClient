@@ -12,7 +12,7 @@ import java.util.Map;
 public class GithubRepository {
     private final String name;
 
-    @JsonProperty(value = "branches_url")
+    @JsonProperty(value = "branches_url", access = JsonProperty.Access.WRITE_ONLY)
     private final String branchesUrl;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

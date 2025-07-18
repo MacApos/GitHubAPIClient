@@ -9,10 +9,15 @@ import java.util.Map;
 public class Branch {
     private final String name;
 
-    private String commitSha;
+    private String sha;
 
     @JsonProperty("commit")
     private void unpackOwner(Map<String, Object> commit) {
-        commitSha = (String) commit.get("sha");
+        sha = (String) commit.get("sha");
+    }
+
+    @JsonProperty("last-commit-sha")
+    public String getSha() {
+        return sha;
     }
 }
