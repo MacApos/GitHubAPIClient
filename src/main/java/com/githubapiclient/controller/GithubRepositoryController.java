@@ -1,7 +1,7 @@
 package com.githubapiclient.controller;
 
-import com.githubapiclient.entity.ErrorResponseBody;
-import com.githubapiclient.entity.GithubRepository;
+import com.githubapiclient.model.ErrorResponseBody;
+import com.githubapiclient.model.GithubRepository;
 import com.githubapiclient.service.GithubRepositoryFetchService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -17,8 +17,8 @@ public class GithubRepositoryController {
     private final GithubRepositoryFetchService githubRepositoryFetchService;
 
     @RequestMapping("/{username}")
-    public List<GithubRepository>  repository(@PathVariable String username) {
-        return githubRepositoryFetchService.facade(username);
+    public List<GithubRepository> getRepositories(@PathVariable String username) {
+        return  githubRepositoryFetchService.facade(username);
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)

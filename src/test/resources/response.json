@@ -1,0 +1,92 @@
+[
+  {
+    "name": "GitHubAPIClient",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "f4c3f35360824209a748602a16cdbe5eb28caf0f"
+      }
+    ]
+  },
+  {
+    "name": "JavaProjects",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "39a656b86cec24bc3a981b6c740a427cffac326f"
+      }
+    ]
+  },
+  {
+    "name": "JavaScriptProjects",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "22e4fd1711e18cf8f94d0c0f8826f276854a6fe4"
+      }
+    ]
+  },
+  {
+    "name": "LeetCode",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "bf3aa35c40c66d47e940cc2a44f6a6afe59d4a17"
+      }
+    ]
+  },
+  {
+    "name": "MovieBrowser",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "770f6482a9e6b294492d29e3e6cc763449c06406"
+      }
+    ]
+  },
+  {
+    "name": "NewsApp24",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "a4ffabcecb21fb0107895a27415097162b971ab6"
+      }
+    ]
+  },
+  {
+    "name": "PortfolioLabCharity",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "23347cc697742ec6ac28f6225159755201c1a62d"
+      }
+    ]
+  },
+  {
+    "name": "Praca_magisterska",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "c2dcf2ffa0247b473101ca53cf84fc6c21a98e8d"
+      }
+    ]
+  },
+  {
+    "name": "Shop",
+    "ownerLogin": "MacApos",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "b9984ced10fdbf7105773a36d10ea64e0ef939ee"
+      }
+    ]
+  }
+]
