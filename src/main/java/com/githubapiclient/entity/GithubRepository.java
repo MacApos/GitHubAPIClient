@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -11,16 +12,18 @@ import java.util.Map;
 public class GithubRepository {
     private final String name;
 
-    @JsonProperty("branches_url")
+    @JsonProperty(value = "branches_url")
     private final String branchesUrl;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private final boolean fork;
 
     private String ownerLogin;
+
+    private List<Branch> branches;
 
     @JsonProperty("owner")
     private void unpackOwner(Map<String, Object> owner) {
         ownerLogin = (String) owner.get("login");
     }
-
 }

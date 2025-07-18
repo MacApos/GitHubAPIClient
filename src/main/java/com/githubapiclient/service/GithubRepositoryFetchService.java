@@ -1,38 +1,47 @@
 package com.githubapiclient.service;
 
+import com.githubapiclient.entity.Branch;
 import com.githubapiclient.entity.GithubRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.*;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestClient;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 public class GithubRepositoryFetchService {
-    private final RestTemplate restTemplate;
-    private final String URL = "https://api.github.com/users/{username}/repos";
+    private final RestClient restClient;
+    private final String BASE_URL = "https://api.github.com";
 
-    public HttpHeaders getHeaders() {
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.set("Accept", "application/vnd.github+json");
-        httpHeaders.set("X-GitHub-Api-Version", "2022-11-28");
-        return httpHeaders;
-    }
-
-    public Map<String, List<String>> fetchReposByUsername(String username) {
-        HttpEntity<Void> requestEntity = new HttpEntity<>(getHeaders());
-
+    private List<GithubRepository> fetchRepositoriesByUsername(String username) {
         ParameterizedTypeReference<List<GithubRepository>> repositoryListTypeReference = new ParameterizedTypeReference<>() {
         };
-        ResponseEntity<List<GithubRepository>> responseEntity = restTemplate.exchange(URL, HttpMethod.GET, requestEntity,
-                repositoryListTypeReference, username);
-        List<GithubRepository> list = responseEntity.getBody().stream().filter(repo -> !repo.isFork()).toList();
+        List<GithubRepository> githubRepositories = restClient.get()
+                .uri(BASE_URL + "/users/{username}/repos", username)
+                .retrieve()
+                .body(repositoryListTypeReference);
+        return githubRepositories == null ? List.of() :
+                githubRepositories.stream().filter(repo -> !repo.isFork()).toList();
+    }
 
-        return Map.of("username", List.of("test"));
+    private List<Branch> fetchBranchesByUrl(String url) {
+        ParameterizedTypeReference<List<Branch>> branchListTypeReference = new ParameterizedTypeReference<>() {
+        };
+        return restClient.get()
+                .uri(url.replace("{/branch}", ""))
+                .retrieve()
+                .body(branchListTypeReference);
+    }
+
+    public List<GithubRepository> facade(String username) {
+        List<GithubRepository> githubRepositories = fetchRepositoriesByUsername(username);
+        githubRepositories.forEach(repository -> repository.setBranches(
+                        fetchBranchesByUrl(repository.getBranchesUrl())
+                )
+        );
+        return githubRepositories;
     }
 
 }
