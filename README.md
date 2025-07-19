@@ -44,4 +44,4 @@ When given a nonexistent profile username, the application will respond with a 4
 message:
 ![Image](https://github.com/user-attachments/assets/dd2f3d75-baa0-485f-8aa4-76ca477ec925)
 
-<p align="right">(<a href="#about-the-project">back to top</a>)</p>
+<p>(<a href="#about-the-project">back to top</a>)</p>
