@@ -38,8 +38,10 @@ containing all the user's public repository names, in the order they were create
 owner login and all branch names for each repository as well as its last commit's SHA.
 
 Example with author username:
+![Image](https://github.com/user-attachments/assets/51e6dc80-785c-4496-b9c6-fe7bfab5c83b)
 
+When given a nonexistent profile username, the application will respond with a 404 status code and an appropriate
+message:
 ![Image](https://github.com/user-attachments/assets/dd2f3d75-baa0-485f-8aa4-76ca477ec925)
-![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 <p align="right">(<a href="#about-the-project">back to top</a>)</p>
