@@ -2,7 +2,8 @@
 
 ## About The Project
 
-This is a simple project for listing GitHub users repositories based on their usernames.
+This is a simple project based on [GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28) for listing
+GitHub users repositories by their usernames.
 
 ## Technologies
 
@@ -44,4 +45,4 @@ When given a nonexistent profile username, the application will respond with a 4
 message:
 ![Image](https://github.com/user-attachments/assets/dd2f3d75-baa0-485f-8aa4-76ca477ec925)
 
-<p>(<a href="#about-the-project">back to top</a>)</p>
+<p align="right">(<a href="#about-the-project">back to top</a>)</p>
