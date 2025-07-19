@@ -20,8 +20,6 @@ public class GithubRepositoryFetchService {
                 new ParameterizedTypeReference<>() {},
                 String.format("%s/users/%s/repos", BASE_URL, username)
         );
-//        List<GithubRepository> githubRepositories = githubRepositoryClient.fetchByUri(
-//                new ParameterizedTypeReference<>() {}, "http://localhost:8081/" + username);
         return githubRepositories == null ? List.of() :
                 githubRepositories.stream().filter(repo -> !repo.isFork()).toList();
     }

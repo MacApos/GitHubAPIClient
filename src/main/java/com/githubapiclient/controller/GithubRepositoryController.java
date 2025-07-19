@@ -18,7 +18,7 @@ public class GithubRepositoryController {
 
     @RequestMapping("/{username}")
     public List<GithubRepository> getRepositories(@PathVariable String username) {
-        return  githubRepositoryFetchService.facade(username);
+        return githubRepositoryFetchService.facade(username);
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
