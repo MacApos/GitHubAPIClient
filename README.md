@@ -49,4 +49,4 @@ message:
 ## Contact
 Email: maciejapostol98@gmail.com
 
-<p align="right">(<a href="#about-the-project">back to top</a>)</p>
+<p align="right"><a href="#about-the-project">back to top</a></p>
