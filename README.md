@@ -27,7 +27,7 @@ GitHub users repositories by their usernames.
    ```
 4. Make a request
    ```sh
-   curl -X GET http://localhost:8080/github_username
+   curl -X GET http://localhost:8080/repositories/github_username
    ```
 
 ## Usage
