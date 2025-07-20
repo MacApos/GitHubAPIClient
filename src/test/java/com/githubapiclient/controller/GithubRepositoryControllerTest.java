@@ -9,15 +9,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
@@ -31,6 +27,7 @@ class GithubRepositoryControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
+    // The test will use a live server, as one of the project requirements was to minimize the use of mocks.
     @Value("classpath:response.json")
     private Resource resourceFile;
 
@@ -42,7 +39,7 @@ class GithubRepositoryControllerTest {
 
         // when
         ResponseEntity<List<GithubRepository>> responseEntity = restTemplate.exchange(
-                "/MacApos", HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
+                "/repositories/karpathy", HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
         List<GithubRepository> repositories = responseEntity.getBody();
 
         // then

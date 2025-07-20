@@ -20,7 +20,7 @@ public class GithubRepository {
 
     private String ownerLogin;
 
-    private  List<Branch> branches;
+    private List<Branch> branches;
 
     public GithubRepository(String name, String ownerLogin, List<Branch> branches) {
         this.name = name;

@@ -11,6 +11,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import java.util.List;
 
 @RestController
+@RequestMapping("/repositories")
 @RequiredArgsConstructor
 public class GithubRepositoryController {
 
@@ -18,13 +19,18 @@ public class GithubRepositoryController {
 
     @RequestMapping("/{username}")
     public List<GithubRepository> getRepositories(@PathVariable String username) {
-        return githubRepositoryFetchService.facade(username);
+        return githubRepositoryFetchService.fetchUserRepositoriesWithBranches(username);
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(HttpClientErrorException.NotFound.class)
-    public ErrorResponseBody handleException(HttpClientErrorException ex) {
-        return new ErrorResponseBody(ex.getStatusCode().value(), "Profile for this username does not exist.");
+    public ErrorResponseBody handleNotFoundException() {
+        return new ErrorResponseBody(404, "Profile for this username does not exist.");
     }
 
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @RequestMapping()
+    public ErrorResponseBody handleEmpty() {
+        return new ErrorResponseBody(400, "Empty profile username");
+    }
 }

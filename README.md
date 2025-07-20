@@ -35,18 +35,18 @@ Complete these steps in order to use the API.
 ## Usage
 
 After providing the username for an existing profile, the application will respond with a list, in JSON format,
-containing all the user's public repository names, in the order they were created. The response body also includes the
-owner login and all branch names for each repository as well as its last commit's SHA.
+containing all the user's public repository names, which are not forks, in the order they were created. The response
+body also includes the owner login and all branch names for each repository as well as its last commit's SHA.
 
 Example with author username:
-![Image](https://github.com/user-attachments/assets/51e6dc80-785c-4496-b9c6-fe7bfab5c83b)
+![Image](https://github.com/user-attachments/assets/50fa4fa7-73b8-4a76-89c0-aa18ba35208a)
 
 When given a nonexistent profile username, the application will respond with a 404 status code and an appropriate
 message:
-![Image](https://github.com/user-attachments/assets/dd2f3d75-baa0-485f-8aa4-76ca477ec925)
-
+![Image](https://github.com/user-attachments/assets/bf4f74de-7a31-4124-9ff1-cbcbe6aba52f)
 
 ## Contact
+
 Email: maciejapostol98@gmail.com
 
 <p align="right"><a href="#about-the-project">back to top</a></p>

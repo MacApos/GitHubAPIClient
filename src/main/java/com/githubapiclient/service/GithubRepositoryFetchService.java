@@ -31,13 +31,14 @@ public class GithubRepositoryFetchService {
         );
     }
 
-    public List<GithubRepository> facade(String username) {
-        return fetchRepositoriesByUsername(username).stream()
+    public List<GithubRepository> fetchUserRepositoriesWithBranches(String username) {
+        return fetchRepositoriesByUsername(username.trim()).stream()
                 .map(repository -> {
                             repository.setBranches(fetchBranchesByUrl(repository.getBranchesUrl()));
                             return repository;
                         }
-                ).toList();
+                )
+                .toList();
     }
 
 }

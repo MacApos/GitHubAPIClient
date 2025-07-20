@@ -1,91 +1,469 @@
 [
   {
-    "name": "GitHubAPIClient",
-    "ownerLogin": "MacApos",
+    "name": "arxiv-sanity-lite",
+    "ownerLogin": "karpathy",
     "branches": [
       {
-        "name": "main",
-        "last-commit-sha": "034ad799df7b04305a3477ec0d24b334050167b2"
+        "name": "master",
+        "last-commit-sha": "d7a303b410b0246fbd19087e37f1885f7ca8a9dc"
       }
     ]
   },
   {
-    "name": "JavaProjects",
-    "ownerLogin": "MacApos",
+    "name": "arxiv-sanity-preserver",
+    "ownerLogin": "karpathy",
     "branches": [
       {
-        "name": "main",
-        "last-commit-sha": "39a656b86cec24bc3a981b6c740a427cffac326f"
+        "name": "discuss",
+        "last-commit-sha": "fc8aff3f696485e4c76fb12b75daa21654f7358b"
+      },
+      {
+        "name": "master",
+        "last-commit-sha": "17b2c281b55574135bda9b9710e4706dee6d652b"
+      },
+      {
+        "name": "mongo",
+        "last-commit-sha": "8e52b8ba59bfb5684f19d485d18faf4b7fba64a6"
+      },
+      {
+        "name": "py3",
+        "last-commit-sha": "1a1d6d0a72b34de4a6ca7788280fc2c111adb8fa"
       }
     ]
   },
   {
-    "name": "JavaScriptProjects",
-    "ownerLogin": "MacApos",
+    "name": "build-nanogpt",
+    "ownerLogin": "karpathy",
     "branches": [
       {
-        "name": "main",
-        "last-commit-sha": "22e4fd1711e18cf8f94d0c0f8826f276854a6fe4"
+        "name": "master",
+        "last-commit-sha": "6104ab1b53920f6e2159749676073ff7d815c1fa"
       }
     ]
   },
   {
-    "name": "LeetCode",
-    "ownerLogin": "MacApos",
+    "name": "calorie",
+    "ownerLogin": "karpathy",
     "branches": [
       {
-        "name": "main",
-        "last-commit-sha": "bf3aa35c40c66d47e940cc2a44f6a6afe59d4a17"
+        "name": "master",
+        "last-commit-sha": "c030afbe9f38e7d0464d2a5d8a1871106dae4acd"
       }
     ]
   },
   {
-    "name": "MovieBrowser",
-    "ownerLogin": "MacApos",
+    "name": "char-rnn",
+    "ownerLogin": "karpathy",
     "branches": [
       {
-        "name": "main",
-        "last-commit-sha": "770f6482a9e6b294492d29e3e6cc763449c06406"
+        "name": "master",
+        "last-commit-sha": "6f9487a6fe5b420b7ca9afb0d7c078e37c1d1b4e"
       }
     ]
   },
   {
-    "name": "NewsApp24",
-    "ownerLogin": "MacApos",
+    "name": "convnetjs",
+    "ownerLogin": "karpathy",
     "branches": [
       {
-        "name": "main",
-        "last-commit-sha": "a4ffabcecb21fb0107895a27415097162b971ab6"
+        "name": "master",
+        "last-commit-sha": "4c3358a315b4d71f31a0d532eb5d1700e9e592ee"
       }
     ]
   },
   {
-    "name": "PortfolioLabCharity",
-    "ownerLogin": "MacApos",
+    "name": "covid-sanity",
+    "ownerLogin": "karpathy",
     "branches": [
       {
-        "name": "main",
-        "last-commit-sha": "23347cc697742ec6ac28f6225159755201c1a62d"
+        "name": "master",
+        "last-commit-sha": "c8a2ab52b2c7ce04097ad7200de5785e796896cd"
+      },
+      {
+        "name": "user/karpathy/tweets",
+        "last-commit-sha": "1552519d9d0285213cdb2e2697ac1a7997da2327"
       }
     ]
   },
   {
-    "name": "Praca_magisterska",
-    "ownerLogin": "MacApos",
+    "name": "cryptos",
+    "ownerLogin": "karpathy",
     "branches": [
       {
         "name": "main",
-        "last-commit-sha": "c2dcf2ffa0247b473101ca53cf84fc6c21a98e8d"
+        "last-commit-sha": "e59d4ca9a77da7459e0e792e9a3a82882c41a11d"
       }
     ]
   },
   {
-    "name": "Shop",
-    "ownerLogin": "MacApos",
+    "name": "deep-vector-quantization",
+    "ownerLogin": "karpathy",
     "branches": [
       {
         "name": "main",
-        "last-commit-sha": "b9984ced10fdbf7105773a36d10ea64e0ef939ee"
+        "last-commit-sha": "c3c026a1ccea369bc892ad6dde5e6d6cd5a508a4"
+      }
+    ]
+  },
+  {
+    "name": "EigenLibSVM",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "1e4b84cfa899e2cc6f4c57dccddc4a611d575a6a"
+      }
+    ]
+  },
+  {
+    "name": "find-birds",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "f99b57a918f9fe0ead7f1f69b763d0b4385682cc"
+      }
+    ]
+  },
+  {
+    "name": "forestjs",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "0e47c3af4c0e3b1d3b7f4a62d5a09deea35ec099"
+      }
+    ]
+  },
+  {
+    "name": "gitstats",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "bf32befff18fb181c7c6708f091adcb38569ac20"
+      }
+    ]
+  },
+  {
+    "name": "karpathy",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "main",
+        "last-commit-sha": "48866c2237b19b430e0f91e3ac1a82250e2759aa"
+      }
+    ]
+  },
+  {
+    "name": "karpathy.github.io",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "13030ab8ac449d1f4a1d583c394d979a05eb24b3"
+      }
+    ]
+  },
+  {
+    "name": "lecun1989-repro",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "8553f52c8d0a51a4bbbabf98e005cef28a22a36b"
+      }
+    ]
+  },
+  {
+    "name": "llama2.c",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "feature/avx2",
+        "last-commit-sha": "d0309ab2d46698ff3350818c123a9eec43b41e56"
+      },
+      {
+        "name": "feature/chat",
+        "last-commit-sha": "4a7a62bd21c6b06006f756368669e7b0b6a2e137"
+      },
+      {
+        "name": "feature/int8_try2",
+        "last-commit-sha": "b233b77058c926ef38c41129d461aae34fb8a0c8"
+      },
+      {
+        "name": "feature/int8",
+        "last-commit-sha": "039a9713c2940a3e4c8b49a28575d341b97727cc"
+      },
+      {
+        "name": "master",
+        "last-commit-sha": "350e04fe35433e6d2941dce5a1f53308f87058eb"
+      },
+      {
+        "name": "revert-389-realtime",
+        "last-commit-sha": "38c58ac336544ba08a814dea89135b0d07fd7450"
+      }
+    ]
+  },
+  {
+    "name": "llm.c",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "ademeure-layernormbf16-3",
+        "last-commit-sha": "0e4506ac300a62f05693ba84bb233b75fcb69c5b"
+      },
+      {
+        "name": "attempt_fix_zero1",
+        "last-commit-sha": "05fb642ae1d920cedb2b425d61962e803744334b"
+      },
+      {
+        "name": "feature/bias_backward2",
+        "last-commit-sha": "776541dac7774ed3dcc07451853967ee3cc0c769"
+      },
+      {
+        "name": "feature/cublaslt",
+        "last-commit-sha": "44cd50cb2503f448cf57688dcecac9471b5f8672"
+      },
+      {
+        "name": "feature/cudnn",
+        "last-commit-sha": "7d0042d574368b8ff15ef5b7b32ef683376fda47"
+      },
+      {
+        "name": "feature/delete_backward_act",
+        "last-commit-sha": "cbe82e783a569581abe6ca7a61438812e42f112a"
+      },
+      {
+        "name": "feature/finetune_llama31py",
+        "last-commit-sha": "0aa91755691656ddfc46d4798fd1d7647cb99e67"
+      },
+      {
+        "name": "feature/fix_int_overflow",
+        "last-commit-sha": "9c2209254b29897172c6483b0c7f5da3160e7a12"
+      },
+      {
+        "name": "feature/fp32_weight_master_copy",
+        "last-commit-sha": "c177c2694cde28a7bfb22ca98f0db58cdf2c6b78"
+      },
+      {
+        "name": "feature/gpt3v1",
+        "last-commit-sha": "220125f39c9460a2fd79f3c4449b2ba19a260000"
+      },
+      {
+        "name": "feature/grad_accum",
+        "last-commit-sha": "f133ee2294733f5b2eff63de4ee42844a68e50b3"
+      },
+      {
+        "name": "feature/grad_accum3",
+        "last-commit-sha": "8eb3a432d991bf23bed3fae9f92dd395015ea457"
+      },
+      {
+        "name": "feature/hellaswag",
+        "last-commit-sha": "8d55c4a6acc3bcf94b7ddb47b9aeaaeea520e3f4"
+      },
+      {
+        "name": "feature/hellaswagc",
+        "last-commit-sha": "da59861d3878eaa74737143228cd00a3aac344fe"
+      },
+      {
+        "name": "feature/hf_eval",
+        "last-commit-sha": "1a66151a80cb62bb742975a12b1d9d606d42b592"
+      },
+      {
+        "name": "feature/libdir",
+        "last-commit-sha": "22d1607f6d8a16c5f6aa302ef764f855642cd199"
+      },
+      {
+        "name": "feature/load_bf16",
+        "last-commit-sha": "9d70d9a1b2698044e1b20e93c483ebbf708b6cae"
+      },
+      {
+        "name": "feature/lr_schedulers",
+        "last-commit-sha": "dbe06082ca6746d7628f96701a003cb7f0e94d62"
+      },
+      {
+        "name": "feature/managed2",
+        "last-commit-sha": "18298f3a408b666557133628b30dca2135cc3775"
+      },
+      {
+        "name": "feature/nccl-only",
+        "last-commit-sha": "f19202c858e3c347058ab049295c797d0c7da587"
+      },
+      {
+        "name": "feature/openmpi_flexible_path",
+        "last-commit-sha": "7c283df9c4ecb9b14fae680aaa87d7cdcbbcb9d5"
+      },
+      {
+        "name": "feature/organize_data",
+        "last-commit-sha": "54ccbd300c49a4421144c448bfe5f83666c4cb9a"
+      },
+      {
+        "name": "feature/outliers",
+        "last-commit-sha": "e12d090483c9c167035ceca3aaede030595f7989"
+      },
+      {
+        "name": "feature/overlap-backward-reduce",
+        "last-commit-sha": "43a903e1b4a90f5b839261ebb31eea04f0117aac"
+      },
+      {
+        "name": "feature/packed128",
+        "last-commit-sha": "af2bc47d226be3fd7117854dfe1e7861372655b0"
+      },
+      {
+        "name": "feature/permuted_dataloader",
+        "last-commit-sha": "14d9cd671e68dae0e0cc72d9c8fa31d67cea69c3"
+      },
+      {
+        "name": "feature/pytorch_parity",
+        "last-commit-sha": "5959851d2dbf15d40297b5a308de9bc01c48b54c"
+      },
+      {
+        "name": "feature/random_init",
+        "last-commit-sha": "1f91bfc44206dfe89bef67ab353f81ed75f40568"
+      },
+      {
+        "name": "feature/recompute",
+        "last-commit-sha": "d7581fc5428b02d71b954ba9f9f073627c4d0a83"
+      },
+      {
+        "name": "feature/refactor_part2",
+        "last-commit-sha": "001ad78fe1440c7e838cfef3c5c5b1db7d14adc5"
+      }
+    ]
+  },
+  {
+    "name": "LLM101n",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "c6de374acd4b57b6fea3b1a1b6e945d58f19cd30"
+      }
+    ]
+  },
+  {
+    "name": "makemore",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "988aa59e4d8fefa526d06f3b453ad116258398d4"
+      },
+      {
+        "name": "morelm",
+        "last-commit-sha": "2f5e8d746e87b3c8424474e35b702092ed7e9579"
+      }
+    ]
+  },
+  {
+    "name": "MatlabWrapper",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "7cb103407da4b61b381a9be749531c21a581dd3d"
+      }
+    ]
+  },
+  {
+    "name": "micrograd",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "c911406e5ace8742e5841a7e0df113ecb5d54685"
+      }
+    ]
+  },
+  {
+    "name": "minbpe",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "1acefe89412b20245db5a22d2a02001e547dc602"
+      }
+    ]
+  },
+  {
+    "name": "minGPT",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "feature/lightning",
+        "last-commit-sha": "a796899f656345ac541aba49eccb368f49b7d730"
+      },
+      {
+        "name": "master",
+        "last-commit-sha": "37baab71b9abea1b76ab957409a1cc2fbfba8a26"
+      },
+      {
+        "name": "refactor_wip",
+        "last-commit-sha": "12f346a63d03ce3c81db660d332101e4492dee1f"
+      }
+    ]
+  },
+  {
+    "name": "nano-llama31",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "06461cada7744a7da86a408f094549800b6bee3f"
+      },
+      {
+        "name": "training",
+        "last-commit-sha": "e72e8f34b4287288b7e8f146131bc3fb99c12cce"
+      }
+    ]
+  },
+  {
+    "name": "nanoGPT",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "autocast_wip",
+        "last-commit-sha": "8b2e622b275f251a9942821f5fabd6c7409bdd94"
+      },
+      {
+        "name": "bias_test",
+        "last-commit-sha": "2892858ce7c69224dfe03343486fb00f93432a50"
+      },
+      {
+        "name": "init_test",
+        "last-commit-sha": "23a0bfac20945a3801f1a57dfa583e8495be6d26"
+      },
+      {
+        "name": "master",
+        "last-commit-sha": "93a43d9a5c22450bbf06e78da2cb6eeef084b717"
+      },
+      {
+        "name": "multi_node_ddp",
+        "last-commit-sha": "684800dd872135983297cc4c72c7e445083b372f"
+      },
+      {
+        "name": "tie_weights",
+        "last-commit-sha": "89da79eee1f2c168166a06cc5714898d07d3701e"
+      }
+    ]
+  },
+  {
+    "name": "neuraltalk",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "c36bd0aa23907638a1217f03a13bdba5e1a8cada"
+      }
+    ]
+  },
+  {
+    "name": "neuraltalk2",
+    "ownerLogin": "karpathy",
+    "branches": [
+      {
+        "name": "master",
+        "last-commit-sha": "bd8c9d879f957e1218a8f9e1f9b663ac70375866"
       }
     ]
   }
