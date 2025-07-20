@@ -13,8 +13,6 @@ GitHub users repositories by their usernames.
 
 ## Installation
 
-Complete these steps in order to use the API.
-
 1. Clone the repository
    ```sh
    git clone https://github.com/MacApos/GitHubAPIClient.git

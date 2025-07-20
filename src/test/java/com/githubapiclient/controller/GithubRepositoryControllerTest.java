@@ -24,10 +24,10 @@ class GithubRepositoryControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
+    // The test will use a live server, as one of the project requirements was to minimize the use of mocks.
     @Autowired
     private TestRestTemplate restTemplate;
 
-    // The test will use a live server, as one of the project requirements was to minimize the use of mocks.
     @Value("classpath:response.json")
     private Resource resourceFile;
 
