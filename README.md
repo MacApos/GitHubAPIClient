@@ -9,8 +9,9 @@ GitHub users repositories by their usernames.
 
 * Java 21
 * Spring Boot 3.5.3
-* Apache Maven 3.9.11
 * Lombok 1.18.38
+* Apache Maven 3.9.11
+
 
 ## Installation
 
